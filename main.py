@@ -18,7 +18,6 @@ TEST_MAIN_ONLY_HEADER_CREATION = False  # debugging option
 
 """
 LZMA Non-Streamed Compression
-Source: https://tukaani.org/lzma/
 
 ----------------------------------------------------------------
 
@@ -61,7 +60,7 @@ def check_agree():
     if not os.path.exists('.agree'):
         res = input('I agree to the warnings above (Yes/No): ')
         if res.lower() == 'y' or res.lower() == 'yes':
-            open('agree', 'a').close()
+            open('.agree', 'a').close()
         else:
             print('You need to agree if you wan\'t to use this script!')
             exit(1)

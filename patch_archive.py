@@ -52,7 +52,7 @@ def patch_archive():
         except:
             print('Number is needed.')
             continue
-        if -1 < option < len(bmp_infos):
+        if 0 < option < len(bmp_infos):
             option -= 1
             break
         print('Invalid.')
@@ -76,10 +76,7 @@ def patch_archive():
 
     # replace splash guid file
     if guid_fw_file_offset + len(guid_file_new_bytes) != guid_fw_file_following_offset:
-        write_bytes(fname=f'{SPLASH_GUID}_Patch.bin', data=guid_file_new_bytes)
-        print(f'{SPLASH_GUID} size changed! This is unsupported. Make sure the BMP byte count matches with the original.\n')
-        print(f'Patched {SPLASH_GUID} saved to "{SPLASH_GUID}_Patch.bin".\nYou can still replace it with UBU (UEFI tool). However this is not'
-              f' your intention if you did not changed deliberately the resolution!')
+        print(f'{SPLASH_GUID} size changed! Make sure the replacement image has the same size!')
         exit(1)
     archive_helper.write_blocks(start_offset=guid_fw_file_offset, end_offset=guid_fw_file_following_offset-1, data=guid_file_new_bytes)
 
