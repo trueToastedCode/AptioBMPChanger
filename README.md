@@ -1,6 +1,12 @@
 # AptioBMPChanger
 Change bitmaps in aptio iv firmware images
 
+### Links
+Tools named can be found here:
+MMtool and more: https://www.tweaktownforum.com/forum/tech-support-from-vendors/gigabyte/30823-latest-overclocking-programs-system-info-benchmarking-stability-tools
+UBU: https://mega.nz/folder/lLg2GLrA#SnZZd0WjHkULFHg7FESm8g
+or https://mega.nz/folder/k4Z0FAra#hMIhuLoTte8IcwtiDibiAw
+
 #### Warning
 I am not responsible for damages of any kind. Use it at your own risk!
 
