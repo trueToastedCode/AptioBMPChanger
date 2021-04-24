@@ -52,5 +52,5 @@ cd "Path to project" && python execution_server.py
 ```
 In Linux/MacOS:
 ```
-python main.py
+venv/bin/python main.py
 ```
