@@ -22,6 +22,8 @@ Then play your rom into the Roms folder and set filename of the rom into the ROM
 #### Creating an image replacement
 First of all, if you just want a patched rom the make an image with the same resolution and depth. I notices that when creating an BMP with Photoshop like that, the filesize is 2 bytes bigger than the original BMP. They were no part of the image so i deleted them and corrected the header of the file by adopting the file size. I also notices, that the ROM BMP's have some stuff i don't know why in the reserved offsets and between the header and pixel data. I ended to simply copy them into my replacement BMP (Correct the header if sile size changed!).
 
+I dont know is this is really possible, but if you replace the image with an image that is bigger, the tool will write the replecement splash file, but you have to replace it with UBU because this script cannot parse the volumes and correct the headers.
+
 # Setup
 #### Setup on Windows:
 ```
