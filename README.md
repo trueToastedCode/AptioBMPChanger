@@ -32,8 +32,8 @@ python -m venv venv && venv\Scripts\pip install flask tableprint requests
 
 #### Run on Windows:
 ```
-python execution_server.py
-python main.py
+venv\Scripts\python execution_server.py
+venv\Scripts\python main.py
 ```
 
 #### Setup on Linux/macOS:
