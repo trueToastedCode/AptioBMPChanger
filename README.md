@@ -46,7 +46,7 @@ venv\Scripts\python main.py
 ```
 python -m venv venv && venv/bin/pip install tableprint requests
 ```
-Setup Wine(Liunx)/Wineskin(MacOS) with Python3 for Windows, Open Cmd:
+Setup Wine(Linux)/Wineskin(MacOS) with Python3 for Windows, Open Cmd:
 ```
 python -m pip install flask
 ```
